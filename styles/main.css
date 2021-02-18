@@ -1,7 +1,7 @@
 /* main general */
 
 .main {
-    margin-top: 150px;
+    margin-top: 100px;
   }
 
 body {
@@ -49,10 +49,9 @@ body {
 /* search */
 
 .search-cont {
-    display: flex;
-    justify-content: center;
+
     align-items: center;
-    flex-direction: column;
+
 }
 
 .search {
@@ -65,7 +64,7 @@ body {
 /* image */
 
 .smaller-img {
-    width: 50%;
+    width: 25%;
     height: 100%;
 }
 
@@ -85,11 +84,12 @@ nav a {
 
 input {
     border-radius: 30px;
-    width: 500px;
+    width: 100%;
     height: 30px;
-    padding: 0px 30px;
+    padding: 0px 0px;
     border: 2px solid #ededed;
     color: #101010;
+    align-items: center;
 }
   input:focus {
     outline: none;
@@ -106,6 +106,7 @@ input {
 } 
   .input-icons { 
       margin-bottom: 10px;
+      width: 50%;
 } 
   .icon { 
     padding: 10px; 
@@ -172,5 +173,37 @@ button:hover {
     bottom: 0;
     color: grey;
   }
+
+
+@media (max-width: 638px) {
+    .footer {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .footer div:nth-child(2) ul {
+        margin-bottom: 15px;
+    }
+    .footer div:nth-child(1) ul li:last-child {
+        display: none;
+    }
+}
+
+@media (max-width: 584px) {
+    .input-icons {
+        width: 100%;
+    }
+    .main__input {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 425px) {
+    .nav-container {
+        padding: 0 15px;
+    }
+    .img-div img {
+        width: 220px;
+    }
+}
 
   
